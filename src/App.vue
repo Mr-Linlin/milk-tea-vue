@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import H from '@/components/HelloWorld.vue'
 </script>
 
 <template>
