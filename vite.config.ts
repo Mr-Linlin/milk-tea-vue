@@ -29,17 +29,18 @@ export default defineConfig({
   resolve: {
     alias: {
       // 使用 import.meta.url 和 fileURLToPath 处理路径
-      '@': fileURLToPath(new URL('./src', import.meta.url)), // 为 src 配置别名
-      '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
-      '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
-      '@styles': fileURLToPath(new URL('./src/assets/styles', import.meta.url)),
-      '@utils': fileURLToPath(new URL('./src/utils', import.meta.url)),
-      '@store': fileURLToPath(new URL('./src/store', import.meta.url)),
+      '@': fileURLToPath(new URL('src', import.meta.url)), // 为 src 配置别名
+      '@components': fileURLToPath(new URL('src/components', import.meta.url)),
+      '@assets': fileURLToPath(new URL('src/assets', import.meta.url)),
+      '@styles': fileURLToPath(new URL('src/assets/styles', import.meta.url)),
+      '@utils': fileURLToPath(new URL('src/utils', import.meta.url)),
+      '@stores': fileURLToPath(new URL('src/stores', import.meta.url)),
+      '@api': fileURLToPath(new URL('src/api', import.meta.url)),
+      '@views': fileURLToPath(new URL('src/views', import.meta.url)),
       // 添加其他需要的别名
     }
   },
   server: {
-    open: true,
     port: 8084,
     proxy: {
       // 选项写法

@@ -1,15 +1,14 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div id="app">
-    <span class="text-red-500">你好啊</span>
-    <el-button type="danger">你好</el-button>
+    <router-view></router-view>
   </div>
 </template>
 
-<style scoped lang="less">
-#app{
-
+<style scoped></style>
+<style>
+.el-message__content {
+  min-width: 200px !important; /* 设置默认宽度 */
 }
 </style>

@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@element-plus/icons-vue': ^2.3.1
   '@types/node': ^22.1.0
   '@types/qs': ^6.9.15
   '@typescript-eslint/eslint-plugin': ^8.0.0
@@ -15,23 +16,31 @@ specifiers:
   eslint-plugin-vue: ^9.27.0
   less: ^4.2.0
   less-loader: ^12.2.0
+  pinia: ^2.2.0
+  pinia-plugin-persistedstate: ^3.2.1
   postcss: ^8.4.40
   prettier: ^3.3.3
   qs: ^6.13.0
   tailwindcss: ^3.4.7
   typescript: ^5.2.2
+  typescript-vue-plugin: ^1.8.27
   unplugin-auto-import: ^0.18.2
   unplugin-vue-components: ^0.27.3
   vite: ^5.3.4
   vite-tsconfig-paths: ^4.3.2
   vue: ^3.4.31
+  vue-router: '4'
   vue-tsc: ^2.0.24
 
 dependencies:
+  '@element-plus/icons-vue': registry.npmmirror.com/@element-plus/icons-vue/2.3.1_vue@3.4.35
   axios: registry.npmmirror.com/axios/1.7.3
   element-plus: registry.npmmirror.com/element-plus/2.7.8_vue@3.4.35
+  pinia: registry.npmmirror.com/pinia/2.2.0_vpgo6ajka7ij3x5pobpooqaql4
+  pinia-plugin-persistedstate: registry.npmmirror.com/pinia-plugin-persistedstate/3.2.1_pinia@2.2.0
   qs: registry.npmmirror.com/qs/6.13.0
   vue: registry.npmmirror.com/vue/3.4.35_typescript@5.5.4
+  vue-router: registry.npmmirror.com/vue-router/4.4.2_vue@3.4.35
 
 devDependencies:
   '@types/node': registry.npmmirror.com/@types/node/22.1.0
@@ -50,6 +59,7 @@ devDependencies:
   prettier: registry.npmmirror.com/prettier/3.3.3
   tailwindcss: registry.npmmirror.com/tailwindcss/3.4.7
   typescript: registry.npmmirror.com/typescript/5.5.4
+  typescript-vue-plugin: registry.npmmirror.com/typescript-vue-plugin/1.8.27_typescript@5.5.4
   unplugin-auto-import: registry.npmmirror.com/unplugin-auto-import/0.18.2
   unplugin-vue-components: registry.npmmirror.com/unplugin-vue-components/0.27.3_vue@3.4.35
   vite: registry.npmmirror.com/vite/5.3.5_vzkj2fx2zqdzjhhcmudj5jbjny
@@ -958,6 +968,14 @@ packages:
       vue: registry.npmmirror.com/vue/3.4.35_typescript@5.5.4
     dev: true
 
+  registry.npmmirror.com/@volar/language-core/1.11.1:
+    resolution: {integrity: sha512-dOcNn3i9GgZAcJt43wuaEykSluAuOkQgzni1cuxLxTV0nJKanQztp7FxyswdRILaKH+P2XZMPRp2S4MV/pElCw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@volar/language-core/-/language-core-1.11.1.tgz}
+    name: '@volar/language-core'
+    version: 1.11.1
+    dependencies:
+      '@volar/source-map': registry.npmmirror.com/@volar/source-map/1.11.1
+    dev: true
+
   registry.npmmirror.com/@volar/language-core/2.4.0-alpha.18:
     resolution: {integrity: sha512-JAYeJvYQQROmVRtSBIczaPjP3DX4QW1fOqW1Ebs0d3Y3EwSNRglz03dSv0Dm61dzd0Yx3WgTW3hndDnTQqgmyg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@volar/language-core/-/language-core-2.4.0-alpha.18.tgz}
     name: '@volar/language-core'
@@ -966,10 +984,27 @@ packages:
       '@volar/source-map': registry.npmmirror.com/@volar/source-map/2.4.0-alpha.18
     dev: true
 
+  registry.npmmirror.com/@volar/source-map/1.11.1:
+    resolution: {integrity: sha512-hJnOnwZ4+WT5iupLRnuzbULZ42L7BWWPMmruzwtLhJfpDVoZLjNBxHDi2sY2bgZXCKlpU5XcsMFoYrsQmPhfZg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@volar/source-map/-/source-map-1.11.1.tgz}
+    name: '@volar/source-map'
+    version: 1.11.1
+    dependencies:
+      muggle-string: registry.npmmirror.com/muggle-string/0.3.1
+    dev: true
+
   registry.npmmirror.com/@volar/source-map/2.4.0-alpha.18:
     resolution: {integrity: sha512-MTeCV9MUwwsH0sNFiZwKtFrrVZUK6p8ioZs3xFzHc2cvDXHWlYN3bChdQtwKX+FY2HG6H3CfAu1pKijolzIQ8g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@volar/source-map/-/source-map-2.4.0-alpha.18.tgz}
     name: '@volar/source-map'
     version: 2.4.0-alpha.18
+    dev: true
+
+  registry.npmmirror.com/@volar/typescript/1.11.1:
+    resolution: {integrity: sha512-iU+t2mas/4lYierSnoFOeRFQUhAEMgsFuQxoxvwn5EdQopw43j+J27a4lt9LMInx1gLJBC6qL14WYGlgymaSMQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@volar/typescript/-/typescript-1.11.1.tgz}
+    name: '@volar/typescript'
+    version: 1.11.1
+    dependencies:
+      '@volar/language-core': registry.npmmirror.com/@volar/language-core/1.11.1
+      path-browserify: registry.npmmirror.com/path-browserify/1.0.1
     dev: true
 
   registry.npmmirror.com/@volar/typescript/2.4.0-alpha.18:
@@ -1031,6 +1066,35 @@ packages:
     dependencies:
       de-indent: registry.npmmirror.com/de-indent/1.0.2
       he: registry.npmmirror.com/he/1.2.0
+    dev: true
+
+  registry.npmmirror.com/@vue/devtools-api/6.6.3:
+    resolution: {integrity: sha512-0MiMsFma/HqA6g3KLKn+AGpL1kgKhFWszC9U29NfpWK5LE7bjeXxySWJrOJ77hBz+TBrBQ7o4QJqbPbqbs8rJw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.6.3.tgz}
+    name: '@vue/devtools-api'
+    version: 6.6.3
+    dev: false
+
+  registry.npmmirror.com/@vue/language-core/1.8.27_typescript@5.5.4:
+    resolution: {integrity: sha512-L8Kc27VdQserNaCUNiSFdDl9LWT24ly8Hpwf1ECy3aFb9m6bDhBGQYOujDm21N7EW3moKIOKEanQwe1q5BK+mA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/language-core/-/language-core-1.8.27.tgz}
+    id: registry.npmmirror.com/@vue/language-core/1.8.27
+    name: '@vue/language-core'
+    version: 1.8.27
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@volar/language-core': registry.npmmirror.com/@volar/language-core/1.11.1
+      '@volar/source-map': registry.npmmirror.com/@volar/source-map/1.11.1
+      '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom/3.4.35
+      '@vue/shared': registry.npmmirror.com/@vue/shared/3.4.35
+      computeds: registry.npmmirror.com/computeds/0.0.1
+      minimatch: registry.npmmirror.com/minimatch/9.0.5
+      muggle-string: registry.npmmirror.com/muggle-string/0.3.1
+      path-browserify: registry.npmmirror.com/path-browserify/1.0.1
+      typescript: registry.npmmirror.com/typescript/5.5.4
+      vue-template-compiler: registry.npmmirror.com/vue-template-compiler/2.7.16
     dev: true
 
   registry.npmmirror.com/@vue/language-core/2.0.29_typescript@5.5.4:
@@ -2597,6 +2661,12 @@ packages:
     version: 2.1.2
     dev: true
 
+  registry.npmmirror.com/muggle-string/0.3.1:
+    resolution: {integrity: sha512-ckmWDJjphvd/FvZawgygcUeQCxzvohjFO5RxTjj4eq8kw359gFF3E1brjfI+viLMxss5JrHTDRHZvu2/tuy0Qg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/muggle-string/-/muggle-string-0.3.1.tgz}
+    name: muggle-string
+    version: 0.3.1
+    dev: true
+
   registry.npmmirror.com/muggle-string/0.4.1:
     resolution: {integrity: sha512-VNTrAak/KhO2i8dqqnqnAHOa3cYBwXEZe9h+D5h/1ZqFSTEFHdM65lR7RoIqq3tBBYavsOXV84NoHXZ0AkPyqQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/muggle-string/-/muggle-string-0.4.1.tgz}
     name: muggle-string
@@ -2838,6 +2908,38 @@ packages:
     engines: {node: '>=6'}
     dev: true
     optional: true
+
+  registry.npmmirror.com/pinia-plugin-persistedstate/3.2.1_pinia@2.2.0:
+    resolution: {integrity: sha512-MK++8LRUsGF7r45PjBFES82ISnPzyO6IZx3CH5vyPseFLZCk1g2kgx6l/nW8pEBKxxd4do0P6bJw+mUSZIEZUQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pinia-plugin-persistedstate/-/pinia-plugin-persistedstate-3.2.1.tgz}
+    id: registry.npmmirror.com/pinia-plugin-persistedstate/3.2.1
+    name: pinia-plugin-persistedstate
+    version: 3.2.1
+    peerDependencies:
+      pinia: ^2.0.0
+    dependencies:
+      pinia: registry.npmmirror.com/pinia/2.2.0_vpgo6ajka7ij3x5pobpooqaql4
+    dev: false
+
+  registry.npmmirror.com/pinia/2.2.0_vpgo6ajka7ij3x5pobpooqaql4:
+    resolution: {integrity: sha512-iPrIh26GMqfpUlMOGyxuDowGmYousTecbTHFwT0xZ1zJvh23oQ+Cj99ZoPQA1TnUPhU6AuRPv6/drkTCJ0VHQA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pinia/-/pinia-2.2.0.tgz}
+    id: registry.npmmirror.com/pinia/2.2.0
+    name: pinia
+    version: 2.2.0
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.3.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': registry.npmmirror.com/@vue/devtools-api/6.6.3
+      typescript: registry.npmmirror.com/typescript/5.5.4
+      vue: registry.npmmirror.com/vue/3.4.35_typescript@5.5.4
+      vue-demi: registry.npmmirror.com/vue-demi/0.14.10_vue@3.4.35
+    dev: false
 
   registry.npmmirror.com/pirates/4.0.6:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pirates/-/pirates-4.0.6.tgz}
@@ -3421,6 +3523,18 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  registry.npmmirror.com/typescript-vue-plugin/1.8.27_typescript@5.5.4:
+    resolution: {integrity: sha512-YGGVADPXqqMD41fCHu0L6hdLIJIHGwgZFfEcAkBEM41Kd7KQbvQEvJw6ZwVKawXg4QEV2Jzgd5qmmE0OH3yCNg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typescript-vue-plugin/-/typescript-vue-plugin-1.8.27.tgz}
+    id: registry.npmmirror.com/typescript-vue-plugin/1.8.27
+    name: typescript-vue-plugin
+    version: 1.8.27
+    dependencies:
+      '@volar/typescript': registry.npmmirror.com/@volar/typescript/1.11.1
+      '@vue/language-core': registry.npmmirror.com/@vue/language-core/1.8.27_typescript@5.5.4
+    transitivePeerDependencies:
+      - typescript
+    dev: true
+
   registry.npmmirror.com/typescript/5.5.4:
     resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typescript/-/typescript-5.5.4.tgz}
     name: typescript
@@ -3663,6 +3777,27 @@ packages:
       semver: registry.npmmirror.com/semver/7.6.3
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  registry.npmmirror.com/vue-router/4.4.2_vue@3.4.35:
+    resolution: {integrity: sha512-1qNybkn2L7QsLzaXs8nvlQmRKp8XF8DCxZys/Jr1JpQcHsKUxTKzTxCVA1G7NfBfwRIBgCJPoujOG5lHCCNUxw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-router/-/vue-router-4.4.2.tgz}
+    id: registry.npmmirror.com/vue-router/4.4.2
+    name: vue-router
+    version: 4.4.2
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': registry.npmmirror.com/@vue/devtools-api/6.6.3
+      vue: registry.npmmirror.com/vue/3.4.35_typescript@5.5.4
+    dev: false
+
+  registry.npmmirror.com/vue-template-compiler/2.7.16:
+    resolution: {integrity: sha512-AYbUWAJHLGGQM7+cNTELw+KsOG9nl2CnSv467WobS5Cv9uk3wFcnr1Etsz2sEIHEZvw1U+o9mRlEO6QbZvUPGQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-template-compiler/-/vue-template-compiler-2.7.16.tgz}
+    name: vue-template-compiler
+    version: 2.7.16
+    dependencies:
+      de-indent: registry.npmmirror.com/de-indent/1.0.2
+      he: registry.npmmirror.com/he/1.2.0
     dev: true
 
   registry.npmmirror.com/vue-tsc/2.0.29_typescript@5.5.4:

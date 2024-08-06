@@ -1,6 +1,38 @@
 /* src/assets/styles/global.css */
 
 /* Reset or normalize CSS */
+/* Global Scrollbar Styles */
+html {
+    scroll-behavior: smooth; /* 平滑滚动效果 */
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* 滚动条的宽度 */
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* 滚动条轨道的背景 */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(23, 163, 211,.5); /* 滚动条的颜色 */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* 滚动条在悬停时的颜色 */
+}
+
+/* 自定义滚动条在不同状态下的样式 */
+::-webkit-scrollbar-button {
+    background: #ccc; /* 滚动条按钮的背景 */
+}
+
+::-webkit-scrollbar-corner {
+    background: #f0f0f0; /* 滚动条角落的背景 */
+}
+
 * {
     margin: 0;
     padding: 0;
